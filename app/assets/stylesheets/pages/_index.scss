@@ -1,2 +1,155 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.medfont {
+  font-size: 16px;
+}
+
+.bigfont {
+  font-size: 19px;
+  color: white;
+  font-weight: 900;
+}
+
+.img_preview {
+  position: absolute;
+  top: -23em;
+  left: -14em;
+  z-index: 10;
+}
+
+.imgconnaitre {
+  position: absolute;
+  top: -23em;
+  left: -14em;
+  z-index: 10;
+}
+
+@media(max-width:767px){
+  .lead {
+
+    font-size: 11px;
+    text-align: left;
+  }
+
+  .contcimg {
+    width: 400px;
+  }
+
+  .text-muted {
+    font-size: 14px;
+  }
+
+  .imgconnaitre {
+    width: 390px;
+    position: absolute;
+    top: -14em;
+    left: 10em;
+    z-index: 0;
+  }
+
+  .img_preview {
+    max-width: 400px;
+    top: -26em;
+    left: 5em;
+    z-index: 10;
+  }
+
+  .slice {
+    padding-top: 2.5rem !important;
+
+    padding-bottom: 2.5rem !important;
+  }
+
+
+  .maintext {
+    text-align: left;
+  }
+
+  #myBtn a {
+
+    font-size: 11px;
+  }
+
+
+
+  .btn-lg {
+    background-color: #F6511D;
+    line-height: 0.5em;
+  }
+
+  .navbar-brand {
+    font-size: 10px;
+  }
+
+  .scdtext {
+    font-size: 11px;
+  }
+
+  .py-5 {
+    padding-bottom: 1rem !important;
+  }
+
+  .bigcont {
+    height: 40vh;
+  }
+
+  .mb-8 {
+    margin-bottom: 2rem !important;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .img_scd {
+    display: none;
+  }
+
+  .lastcont {
+    display: none;
+  }
+  .midle {
+    text-align: center;
+  }
+
+  .smallimg {
+    width: 30%;
+  }
+
+  .smallfont {
+    font-size: 14px;
+  }
+
+  .medfont {
+    font-size: 16px;
+  }
+
+  .card2 {
+
+    align-items: center !important;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .card-body {
+    padding: 0.75rem;
+  }
+
+  .blockquote h4 {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+
+
+ /*  .tricount {
+    text-align: center !important;
+  }
+
+  .mdltext {
+    text-align: center !important;
+  } */
+}
