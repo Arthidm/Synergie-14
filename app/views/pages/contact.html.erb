@@ -29,9 +29,9 @@
             </ul>
 
             <!-- Mobile button -->
-            <div class="d-lg-none text-center">
+      <!--       <div class="d-lg-none text-center">
                 <a href="https://webpixels.io/themes/quick-website-ui-kit" class="btn btn-block btn-sm btn-warning">See more details</a>
-            </div>
+            </div> -->
         </div>
     </div>
   </nav>
@@ -53,7 +53,7 @@
       <div class="row">
         <div class="col-xl col-sm-6 mt-n7 d-flex justify-content-center">
 
-          <%= image_tag("contact.png", :alt => "rss feed", :style => "width: 860px") %>
+          <%= image_tag("contact.png", :alt => "rss feed", :class => "contcimg") %>
 
         </div>
       </div>
@@ -81,7 +81,7 @@
           </p>
         </div>
         <div class="col-lg-6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830872278!2d-74.1197639579598!3d40.69766374873451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sro!4v1580299124407!5m2!1sen!2sro" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" class="rounded"></iframe>
+          <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%20Rue%20Keyenveld,%2091.%20B-1050%20Bruxelles+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
       </div>
     </div>
@@ -108,7 +108,7 @@
             </div>
             <div class="col-lg-4 order-lg-1">
               <div class="card2 mb-0 mr-lg-5 align-items-left">
-                <%= image_tag("fedasil.png", :alt => "rss feed") %>
+                <%= image_tag("fedasil.png", :alt => "rss feed", :class => "smallimg") %>
 
               </div>
             </div>
@@ -124,7 +124,7 @@
             </div>
             <div class="col-lg-4 order-lg-1">
               <div class="card2 mb-0 mr-lg-5 align-items-left">
-                <%= image_tag("regionbx.png", :alt => "rss feed") %>
+                <%= image_tag("regionbx.png", :alt => "rss feed", :class => "smallimg") %>
               </div>
             </div>
         </div>
@@ -140,7 +140,7 @@
             </div>
             <div class="col-lg-4 order-lg-1">
               <div class="card2 mb-0 mr-lg-5 align-items-left">
-                <%= image_tag("capital.png", :alt => "rss feed") %>
+                <%= image_tag("capital.png", :alt => "rss feed", :class => "smallimg") %>
               </div>
             </div>
         </div>
@@ -156,7 +156,7 @@
             </div>
             <div class="col-lg-4 order-lg-1">
               <div class="card2 mb-0 mr-lg-5 align-items-left">
-                <%= image_tag("ixelles.png", :alt => "rss feed") %>
+                <%= image_tag("ixelles.png", :alt => "rss feed", :class => "smallimg") %>
               </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
             </div>
             <div class="col-lg-4 order-lg-1">
               <div class="card2 mb-0 mr-lg-5 align-items-left">
-                <%= image_tag("arcenciel.png", :alt => "rss feed") %>
+                <%= image_tag("arcenciel.png", :alt => "rss feed", :class => "smallimg") %>
               </div>
             </div>
         </div>
@@ -180,68 +180,29 @@
     </div>
   </section>
   <section class="slice slice-lg">
-        <div class="container text-center text-lg-left">
+        <div class="container text-center text-lg">
             <!-- Title -->
-            <div class="row">
+            <div class="row" style="justify-content: center;">
                 <div class="col-lg-6 col-md-10">
-                    <span class="badge badge-primary badge-pill">Support team</span>
-                    <h5 class="h5 lh-180 mt-4 mb-6">Our support team is available 24/7 for any issues you might have with our products.</h5>
+<!--                     <span class="badge badge-primary badge-pill">Support team</span> -->
+                    <h5 class="h5 lh-180 mt-4 mb-6" >Our support team is available 24/7 for any issues you might have with our products.</h5>
                 </div>
             </div>
             <!-- Team -->
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
-                    <div data-animate-hover="2">
-                        <div class="animate-this">
-                            <a href="#">
-                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG1hbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                            </a>
-                        </div>
-                        <div class="mt-3">
-                            <h5 class="h6 mb-0">Heather Wright</h5>
-                            <p class="text-muted text-sm mb-0">Founded &amp; Chairman</p>
-                        </div>
-                    </div>
+            <div class="row" style="justify-content: center;">
+              <div class="col-lg-8 col-sm-6 mb-5 mb-lg-0">
+                <div data-animate-hover="2">
+                  <div class="animate-this">
+                      <a href="#">
+                        <%= image_tag("ca14.jpg", :alt => "rss feed", :class => "img-fluid rounded shadow") %>
+                      </a>
+                  </div>
+                  <div class="mt-3">
+                      <h5 class="h6 mb-0">CA Synergie-14</h5>
+                      <p class="text-muted text-sm mb-0">Founded &amp; Chairman</p>
+                  </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
-                    <div data-animate-hover="2">
-                        <div class="animate-this">
-                            <a href="#">
-                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-2.jpg">
-                            </a>
-                        </div>
-                        <div class="mt-3">
-                            <h5 class="h6 mb-0">Monroe Parker</h5>
-                            <p class="text-muted text-sm mb-0">Back End Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
-                    <div data-animate-hover="2">
-                        <div class="animate-this">
-                            <a href="#">
-                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-3.jpg">
-                            </a>
-                        </div>
-                        <div class="mt-3">
-                            <h5 class="h6 mb-0">John Sullivan</h5>
-                            <p class="text-muted text-sm mb-0">Front End Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
-                    <div data-animate-hover="2">
-                        <div class="animate-this">
-                            <a href="#">
-                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-4.jpg">
-                            </a>
-                        </div>
-                        <div class="mt-3">
-                            <h5 class="h6 mb-0">James Lewis</h5>
-                            <p class="text-muted text-sm mb-0">Vice Chairman</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
         </div>
     </section>
@@ -272,7 +233,7 @@
               <div class="text-center">
                 <!-- <div class="g-recaptcha" data-sitekey="6Lfs5ScUAAAAANAJwGrdfvWLFRRiVbKRE2vfoaFj"></div> -->
                 <button type="reset" class="btn-reset d-none"></button>
-                <button type="submit" class="btn btn-block btn-lg btn-primary mt-4">Send your message</button>
+                <button type="submit" class="btn btn-block btn-lg btn mt-4" style="background-color: #B33951;" >Send your message</button>
               </div>
             </form>
           </div>
@@ -285,7 +246,7 @@
 
             <!-- Footer -->
             <div class="container pt-4">
-                <div class="row">
+                <div class="row lastcont">
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <!-- Theme's logo -->
                         <h3 class="navbar-brand" style="color: black; font-weight: 700;">
