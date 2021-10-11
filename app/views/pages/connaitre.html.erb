@@ -5,9 +5,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <!-- Brand -->
-            <h3 class="navbar-brand" style="color: black; font-weight: 700;">
-                Synergie 14
-            </h3>
+            <a href="/">
+              <%= image_tag("logopetitrouge.jpg", :alt => "rss feed", :class => "navbar-brand", :style => "width:75px") %>
+            </a>
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,8 +42,8 @@
         <div class="row row-grid align-items-center">
           <div class="col-lg-6 text-center text-lg-left" style="z-index: 1000">
             <!-- Heading -->
-            <h1 class="mb-4 maintext" style="color: black; font-weight: 900;">
-              Nous <strong style="color: #F6511D">Connaître</strong>
+            <h1 class="mb-4 maintext" style="color: #F6511D; font-weight: 900; font-size: 56px">
+              Nous <strong style="color: black">Connaître</strong>
             </h1>
             <!-- Text -->
             <!-- Buttons -->
@@ -85,7 +85,7 @@
                 </span> -->
                 <h2 class=" mt-4">Notre Accueil</h2>
                 <div class="mt-2">
-                  <p class="lead lh-180">Use Atomic Design to build components, sections and, then, pages.</p>
+                  <p class="lead lh-180"><!-- Use Atomic Design to build components, sections and, then, pages. --></p>
                 </div>
             </div>
         </div>
@@ -94,16 +94,16 @@
         <div class="row mt-5">
           <div class="col-lg-12">
             <div class="card">
-              <div class="card-body pb-5">
+              <div class="card-body pb-1">
 <!--                     <div class="pt-4 pb-5">
                     <img src="assets/img/svg/illustrations/illustration-5.svg" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
                 </div> -->
-                <h5 class="h4 lh-130 mb-3 smallfont"> &#8226 Hébergement de courte durée </h5>
-                <p class="text-muted mb-5 smallfont">Pour permettre aux différents intervenants de trouver des solutions dans un bref délais en tenant compte des difficultés que rencontre le jeune et des possibilités qui lui sont offertes : accueil d’urgence.</p>
-                <h5 class="h4 lh-130 mb-3 smallfont">&#8226 Hébergement à durée moyenne</h5>
-                <p class="text-muted mb-5 smallfont">Pour travailler sur une problématique avec le jeune : mandat ou time out.</p>
-                <h5 class="h4 lh-130 mb-3 smallfont">&#8226 Hébergement de longue durée</h5>
-                <p class="text-muted mb-5 smallfont">sur base d’évaluation après un accueil : accompagnement projet.</p>
+                <h5 class=" lh-130 mb-3 smallfont"> &#8226 Hébergement de courte durée </h5>
+                <p class="text-muted mb-4 smallfont">Pour permettre aux différents intervenants de trouver des solutions dans un bref délais en tenant compte des difficultés que rencontre le jeune et des possibilités qui lui sont offertes : accueil d’urgence.</p>
+                <h5 class=" lh-130 mb-3 smallfont">&#8226 Hébergement à durée moyenne</h5>
+                <p class="text-muted mb-4 smallfont">Pour travailler sur une problématique avec le jeune : mandat ou time out.</p>
+                <h5 class=" lh-130 mb-3 smallfont">&#8226 Hébergement de longue durée</h5>
+                <p class="text-muted mb-4 smallfont">sur base d’évaluation après un accueil : accompagnement projet.</p>
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@
         <div class="row mt-5">
           <div class="col-lg-12">
 
-            <%= image_tag("places2.png", :class => "img-fluid img-center") %>
+            <%= image_tag("places2.png", :class => "img-fluid img-center", :style => "max-width:540px") %>
 <!--                   <img src="places.png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" /> -->
           </div>
         </div>
@@ -178,7 +178,7 @@
             <div class="col-lg-6">
                 <h2 class=" mt-4">Notre Accueil</h2>
                 <div class="mt-2">
-                  <p class="lead lh-180">Use Atomic Design to build components, sections and, then, pages.</p>
+                  <p class="lead lh-180"><!-- Use Atomic Design to build components, sections and, then, pages. --></p>
                 </div>
             </div>
         </div>
@@ -187,7 +187,7 @@
         <div class="row mt-5">
           <div class="col-lg-12">
 
-            <%= image_tag("team.png", :class => "img-fluid img-center") %>
+            <%= image_tag("équipe.png", :class => "img-fluid img-center") %>
 <!--                   <img src="places.png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" /> -->
           </div>
         </div>
@@ -204,8 +204,8 @@
         <div class="py-6">
           <div class="row mt-4 row-grid justify-content-between align-items-center">
               <div class="col-lg-8 order-lg-2">
-                  <h5 class="h3">Need a quick admin panel for your website?</h5>
-                  <p class="lead my-4">
+                  <h5 class="h3"><!-- Need a quick admin panel for your website? --></h5>
+                  <p class="my-4">
                      Synergie 14 est une initiative née de la formation d’un groupe de réfugiés et étudiants issus pour l’essentiel de l’Afrique subsaharienne réunis autour de la question : l’exil et après ? L’idée de mettre en place un dispositif d’accueil et d’accompagnement de mineurs étrangers non accompagnés en Belgique est lancée : Projet Relais. En même temps, la nécessité d’intervenir sur deux des causes de ce mouvement migratoire que sont le manque de scolarité mais surtout le décrochage scolaire nous a emmenés à la mise en place d’écoles de devoirs en Afrique, notamment au Niger.
                   </p>
               </div>
@@ -219,8 +219,8 @@
         <div class="py-6">
           <div class="row row-grid justify-content-between align-items-center text-right">
             <div class="col-lg-8 text-right">
-              <h5 class="h3 text-left">A modern project management dashboard</h5>
-              <p class="lead my-4">
+              <h5 class="h3 text-left"><!-- A modern project management dashboard --></h5>
+              <p class="my-4">
                 Rapidement, rejoints par d’autres personnes intéressées par la problématique de la migration, les questions d’éducation mais aussi de l’Aide à la jeunesse et/ou des droits humains, les activités d’aide commencèrent à la rue Jean Van Volsem à Ixelles. Avec une capacité de 4 lits et une fréquentation journalière des jeunes qui ne comprenaient pas l’intérêt de rester dans un centre pour mineurs, nous nous retrouvions avec 10 prises en charges en moyenne par jour.
               </p>
             </div>
@@ -234,8 +234,8 @@
         <div class="py-6">
           <div class="row mt-4 row-grid justify-content-between align-items-center">
               <div class="col-lg-8 order-lg-2">
-                  <h5 class="h3">Need a quick admin panel for your website?</h5>
-                  <p class="lead my-4">
+                  <h5 class="h3"><!-- Need a quick admin panel for your website? --></h5>
+                  <p class="my-4">
                     Avec le soutien de Fedasil, de la Fédération Wallonie-Bruxelles, du CPAS d’Ixelles, de l’asbl Arc-en-Ciel, de quelques Fondations et de fidèles donateurs, le travail sans relâche de l’équipe a fini par convaincre les partenaires mais surtout les bénéficiaires de la nécessité d’un accueil plus large par Synergie 14. Ce succès a permis d’augmenter notre capacité avec 3 places à Van Volsem et 11 à la rue Wéry à Ixelles. 2014 a connu le couronnement de nos efforts par l’agrément de la Fédération Wallonie-Bruxelles en tant que PEP (Projet Educatif Particulier) et 2015, la signature de la convention de partenariat avec Fédasil.
                   </p>
               </div>
@@ -249,8 +249,8 @@
         <div class="py-6">
           <div class="row row-grid justify-content-between align-items-center text-right">
             <div class="col-lg-8 text-right">
-              <h5 class="h3 text-left">A modern project management dashboard</h5>
-              <p class="lead my-4">
+              <h5 class="h3 text-left"><!-- A modern project management dashboard --></h5>
+              <p class="my-4">
                 Depuis juin 2020 nous sommes au, 91 de la rue Keyenveld, toujours à Ixelles, pour des raisons logistiques qui nous permettent d’améliorer l’accueil et l’accompagnement des jeunes sur un seul site. Les nouvelles installations offrent plus d’espace aux jeunes, favorisent la création de nouveaux projets et la mise en place d’ateliers et d’activités variés. Vous pourrez suivre toute cette nouveauté en nous rendant visite sur place ou en consultant notre page Facebook et le site Web.
               </p>
             </div>
