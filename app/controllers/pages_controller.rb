@@ -4,8 +4,8 @@ class PagesController < ApplicationController
 
   def download
     send_file(
-      "#{Rails.root}/public/rapport2018.pdf",
-      filename: "rapport2018.pdf",
+      "#{Rails.root}/public/2018S14RapportActiviteės.pdf",
+      filename: "2018S14RapportActiviteės.pdf",
       type: "application/pdf"
     )
   end
