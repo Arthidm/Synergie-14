@@ -1,6 +1,33 @@
 // Import page-specific CSS files here.
 @import "home";
 
+
+.imgimpactsmall {
+  visibility: hidden;
+  width: 0%;
+}
+
+.maintext {
+  font-weight: 900;
+  font-size: 56px;
+}
+
+.maintext2 {
+  font-weight: 900;
+  font-size: 56px;
+}
+
+.smallconnaitre {
+  display: none;
+}
+
+/* .imgimpact {
+  position: absolute;
+  top: -23em;
+  left: -3em;
+  z-index: 10;
+} */
+
 .medfont {
   font-size: 16px;
 }
@@ -41,12 +68,17 @@
     font-size: 14px;
   }
 
+  .imgimpact {
+    display: none;
+  }
+
+  .spacy {
+    align-items: space-around;
+    justify-content: space-around;
+  }
+
   .imgconnaitre {
-    width: 390px;
-    position: absolute;
-    top: -14em;
-    left: 10em;
-    z-index: 0;
+    display: none;
   }
 
   .img_preview {
@@ -54,6 +86,19 @@
     top: -26em;
     left: 5em;
     z-index: 10;
+  }
+
+  .img-mission {
+
+  }
+
+  .imgimpactsmall {
+    position: absolute;
+    width: 476px;
+    top: -12em;
+    left: 6em;
+    z-index: 00;
+    visibility: visible;
   }
 
   .slice {
@@ -65,12 +110,29 @@
 
   .maintext {
     text-align: left;
+    color: black;
+    font-weight: 900;
+    font-size: 38px;
+  }
+
+  .maintext2 {
+    text-align: center;
   }
 
   #myBtn a {
 
     font-size: 11px;
   }
+
+  .smallconnaitre {
+    display: block;
+    position: absolute;
+    max-width: 599px;
+    top: -20em;
+    left: -4em;
+    z-index: 00;
+  }
+
 
 
 
@@ -116,6 +178,10 @@
 
   .smallimg {
     width: 30%;
+  }
+
+  .smallpic {
+    width: 305px;
   }
 
   .smallfont {
