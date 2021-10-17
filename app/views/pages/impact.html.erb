@@ -1,5 +1,4 @@
 <body>
-
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <!-- Brand -->
@@ -38,7 +37,7 @@
   <section class="slice py-8 bg">
     <div class="container py-5">
       <div class="row row-grid align-items-center">
-        <div class="col-lg-6 text-center text-lg-left">
+        <div class="col-lg-6 text-center text-lg-left" style="z-index: 1000">
           <h1 class="mb-4" style="color: black;font-weight: 900;font-size: 69Px;">
             Notre <strong style="color: #F6511D">Impact</strong>
           </h1>
@@ -53,8 +52,9 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="imghome" style="position: absolute; top: -23em; left: -3em; z-index: 10;">
-            <%= image_tag("impact2.png", :alt => "rss feed") %>
+          <div class="imghome" style="position: absolute; top: -23em; left: -3em; z-index: 00;">
+            <%= image_tag("impact2.png", :alt => "rss feed", :class => "imgimpact") %>
+            <%= image_tag("impact-small.png", :alt => "rss feed", :class => "imgimpactsmall") %>
           </div>
         </div>
       </div>
@@ -139,11 +139,11 @@
   </section>
   <section class="slice pt-0">
     <div class="container position-relative zindex-100">
-      <div class="row">
+      <div class="row spacy">
         <div class="row mt-4">
           <div class="col-lg-6 pr-lg mt-n8">
             <p class="mb-3" style="margin-bottom: none !important">
-              <%= image_tag("hope.png", :alt => "rss feed", :style => "width: 100%" ) %>
+              <%= image_tag("hope.png", :alt => "rss feed", :style => "width: 100%", :class => "imgimpact" ) %>
             </p>
           </div>
           <div class="col-lg-6 slice mt-n8" style="background-color: #FFB63D;color: white;">
@@ -190,7 +190,7 @@
   </section>
   <section class="slice pt-0">
     <div class="container position-relative zindex-100">
-      <div class="row">
+      <div class="row spacy">
         <div class="row mt-4">
           <div class="col-lg-6 slice mt-n8" style="background-color: #FFB63D;color: white;">
             <h3 class="col-lg bigfont" style="color: white;">En Europe: Projets Relais</h1>
@@ -207,7 +207,7 @@
           </div>
           <div class="col-lg-6 pr-lg mt-n8">
             <p class="mb-3" style="margin-bottom: none !important">
-              <%= image_tag("hope.png", :alt => "rss feed", :style => "width: 100%" ) %>
+              <%= image_tag("hope.png", :alt => "rss feed", :style => "width: 100%", :class => "imgimpact" ) %>
             </p>
           </div>
         </div>
@@ -237,7 +237,7 @@
     </div>
   </section>
 
-  <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+  <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section">
     <div class="container">
       <!-- Title -->
       <!-- Section title -->
@@ -255,7 +255,7 @@
           <div class="card">
             <div class="card-body pb-5">
               <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
-                <%= image_tag("folder.png", :alt => "rss feed", :style => "width: 50%" ) %>
+                <%= image_tag("folder.png", :alt => "rss feed", :style => "max-width: 50%" ) %>
               </div>
               <h5 class="h4 lh-130 mb-4">Rapport-2020</h5>
               <p><%= link_to "Télécharger", download_path, target: "_blank"%> <%= image_tag("right-arrow.png", :alt => "rss feed") %></p>
@@ -266,7 +266,7 @@
           <div class="card">
             <div class="card-body pb-5">
               <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
-                <%= image_tag("folder.png", :alt => "rss feed", :style => "width: 50%" ) %>
+                <%= image_tag("folder.png", :alt => "rss feed", :style => "max-width: 50%" ) %>
               </div>
               <h5 class="h4 lh-130 mb-4">Rapport-2019</h5>
               <p><%= link_to "Télécharger", download_path, target: "_blank"%> <%= image_tag("right-arrow.png", :alt => "rss feed") %></p>
@@ -277,7 +277,7 @@
           <div class="card">
             <div class="card-body pb-5">
               <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
-                <%= image_tag("folder.png", :alt => "rss feed", :style => "width: 50%" ) %>
+                <%= image_tag("folder.png", :alt => "rss feed", :style => "max-width: 50%" ) %>
               </div>
               <h5 class="h4 lh-130 mb-4">Rapport-2018</h5>
               <p><%= link_to "Télécharger", download_path, target: "_blank"%> <%= image_tag("right-arrow.png", :alt => "rss feed") %></p>
@@ -289,102 +289,117 @@
     </div>
   </section>
 
-
-
-
-  <footer class="position-relative" id="footer-main" style="background-color: #B33951;">
-    <div class="footer pt-lg-7 footer-dark bg"  style="background-color: #B33951;">
-        <!-- SVG shape -->
-
-        <!-- Footer -->
-        <div class="container pt-4">
-            <div class="row">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <!-- Theme's logo -->
-                    <h3 class="navbar-brand" style="color: black; font-weight: 700;">
-                      Synergie 14
-                    </h3>
-                    <!-- Webpixels' mission -->
-                    <p class="mt-4 text-sm opacity-8 pr-lg-4"></p>
-                    <!-- Social -->
-                    <ul class="nav mt-4">
-                        <li class="nav-item">
-                            <a class="nav-link pl-0" href="https://dribbble.com/webpixels" target="_blank">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/webpixels" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/webpxs" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com/webpixels" target="_blank">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
-                    <h6 class="heading mb-3">Account</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">Billing</a></li>
-                        <li><a href="#">Notifications</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                    <h6 class="heading mb-3">About</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                    <h6 class="heading mb-3">Company</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="divider divider-fade divider-dark my-4">
-            <div class="row align-items-center justify-content-md-between pb-4">
-                <div class="col-md-6">
-                    <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                        &copy; 2020 <a href="https://webpixels.io" class="font-weight-bold" target="_blank">Webpixels</a>. All rights reserved
+<!--   <section>
+<div class="container text-center my-3">
+    <h2 class="font-weight-light">Bootstrap 4 - Multi Item Carousel</h2>
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=1">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Terms
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Privacy
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Cookies
-                            </a>
-                        </li>
-                    </ul>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=2">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=3">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=4">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=5">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                          <h1>Yo</h1>
+                            <img class="img-fluid" src="http://placehold.it/380?text=6">
+                        </div>
+                    </div>
                 </div>
             </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
-  </footer>
+    <h5 class="mt-2">Advances one slide at a time</h5>
+</div>
+  </section> -->
+
+
+
+
 </body>
+
+<footer class="footer-07">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <h2 class="footer-heading"><a href="#" class="logo">Synergie14.com</a></h2>
+        <p class="menu">
+          <a class="" href="/connaitre">Nous Connaître</a>
+          <a class="" href="">Notre Impact</a>
+          <a class="" href="/soutenir">Nous Aider</a>
+          <a class="" href="/contact">Nous Contacter</a>
+        </p>
+        <!-- <ul class="ftco-footer-social p-0">
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  $('#recipeCarousel').carousel({
+    interval: 10000
+  })
+
+  $('.carousel .carousel-item').each(function(){
+      var minPerSlide = 3;
+      var next = $(this).next();
+      if (!next.length) {
+      next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i=0;i<minPerSlide;i++) {
+          next=next.next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+
+          next.children(':first-child').clone().appendTo($(this));
+        }
+  });
+</script>
