@@ -1,6 +1,17 @@
 // Import page-specific CSS files here.
 @import "home";
 
+.texthex {
+  margin-bottom: 3em;
+}
+
+.textwidth {
+  max-width: 50%;
+}
+
+.textgon {
+
+}
 
 .imgimpactsmall {
   visibility: hidden;
@@ -8,6 +19,13 @@
 }
 
 .maintext {
+  font-weight: 900;
+  font-size: 56px;
+  color: black;
+
+}
+
+#quatorze {
   font-weight: 900;
   font-size: 56px;
 }
@@ -40,10 +58,9 @@
 
 .img_preview {
   position: absolute;
-  top: -28em;
-  left: -18em;
+  top: -11em;
+  left: 18em;
   z-index: 0;
-  width: 948px;
 }
 
 .imgconnaitre {
@@ -68,6 +85,14 @@
     font-size: 14px;
   }
 
+  .textwidth {
+    max-width: 80%;
+  }
+
+  .texthex {
+    margin-bottom: 1.5em;
+  }
+
   .imgimpact {
     display: none;
   }
@@ -83,8 +108,9 @@
 
   .img_preview {
     max-width: 400px;
-    top: -26em;
-    left: 5em;
+    top: -1em;
+    left: 19em;
+    transform: rotate(180deg);
     z-index: 10;
   }
 
@@ -103,7 +129,6 @@
 
   .slice {
     padding-top: 2.5rem !important;
-
     padding-bottom: 2.5rem !important;
   }
 
@@ -113,11 +138,17 @@
     color: black;
     font-weight: 900;
     font-size: 38px;
+    margin-bottom: 0em !important;
   }
 
   .maintext2 {
     text-align: center;
   }
+
+  .textgon {
+    font-size: 16px;
+  }
+
 
   #myBtn a {
 
@@ -133,7 +164,9 @@
     z-index: 00;
   }
 
-
+  .home {
+    padding-top: 2rem;
+  }
 
 
   .btn-lg {
@@ -147,6 +180,11 @@
 
   .scdtext {
     font-size: 11px;
+    padding-bottom: 2.5em;
+  }
+
+  .smlmargin {
+    margin-top: 1rem !important;
   }
 
   .py-5 {
@@ -159,6 +197,11 @@
 
   .mb-8 {
     margin-bottom: 2rem !important;
+  }
+
+  .mt-8 {
+    margin-top: 1rem !important;
+
   }
 
   .flex {
