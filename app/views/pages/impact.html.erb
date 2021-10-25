@@ -36,8 +36,8 @@
 
   <section class="slice py-8 bg">
     <div class="container py-5">
-      <div class="row row-grid align-items-center">
-        <div class="col-lg-6 text-center text-lg-left" style="z-index: 1000">
+      <div class="row row-grid align-items-center ">
+        <div class="col-lg-6 text-center text-lg-left imgimpact" style="z-index: 1000">
           <h1 class="mb-4" style="color: black;font-weight: 900;font-size: 69Px;">
             Notre <strong style="color: #F6511D">Impact</strong>
           </h1>
@@ -71,16 +71,16 @@
       </div>
       <div class="row" id="gallery2" data-toggle="modal" data-target="#exampleModal">
         <div class="col-12 col-sm-6 col-lg-3">
-          <img class="w-100" src="/assets/infra3.jpg" alt="First slide" data-target="#carouselExample" data-slide-to="0">
+          <%= image_tag("infra3.png", :alt => "rss feed", :class => "w-100 lastcont", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"   ) %>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-          <img class="w-100" src="/assets/infra1.png" alt="First slide" data-target="#carouselExample" data-slide-to="1">
+          <%= image_tag("infra1.png", :alt => "rss feed", :class => "w-100 lastcont", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"   ) %>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-          <img class="w-100" src="/assets/infra4.jpg" alt="First slide" data-target="#carouselExample" data-slide-to="2">
+          <%= image_tag("infra4.jpg", :alt => "rss feed", :class => "w-100 lastcont", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"   ) %>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-          <img class="w-100" src="/assets/infra2.png" alt="First slide" data-target="#carouselExample" data-slide-to="3">
+          <%= image_tag("infra3.jpg", :alt => "rss feed", :class => "w-100", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"   ) %>
         </div>
       </div>
 
@@ -165,7 +165,7 @@
           </div>
           <div class="col-lg-6">
             <div class="mb-0 ml-lg-5">
-              <div class="card-body p-2">
+              <div class="card-body p-2 imgimpact">
                 <%= image_tag("graphnew.png", :class => "img-fluid") %>
               </div>
             </div>
@@ -285,6 +285,38 @@
               <p>Thomas Simon Senghor</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slice slice-lg mt-8">
+    <div class="container position-relative zindex-100">
+      <div class="col">
+        <div class="row justify-content-center">
+          <div class="col-md-10 text-center">
+            <div class="mt-4 mb-6">
+              <h2 class="h1">
+                Nos Projets Durables:
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg-6 pr-lg">
+          <p class="mb-3" style="margin-bottom: none !important">
+            <%= image_tag("young.png", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+
+          </p>
+        </div>
+        <div class="col-lg-6 slice" style="background-color: #B33951; color: white; max-height: 350px;">
+          <p class="lead lh-180 col-lg" >
+            L’axe d’intervention en Europe: projet Relais.
+            Nous intervenons sur toutes les lignes du parcours, du primo-arrivant, au jeune en rupture qui ne parvient pas à s’accrocher au dispositif d’accueil global pour de multiples raisons...
+          </p>
         </div>
       </div>
     </div>
