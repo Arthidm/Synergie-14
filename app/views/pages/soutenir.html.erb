@@ -37,7 +37,7 @@
         </div>
     </nav>
     <!-- Main content -->
-    <section class="slice py-10 bg" style="background-color: #FAFBFE;">
+    <section class="slice py-10 bg" style="">
       <div class="container py-5">
         <div class="row row-grid align-items-center">
           <div class="col-lg-6 text-center text-lg-left" style="z-index: 100;">
@@ -65,7 +65,7 @@
       </div>
     </section>
 
-  <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-0 bg-section-secondary">
+  <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-0 bg-section">
     <div class="container">
       <!-- Title -->
       <!-- Section title -->
@@ -78,7 +78,7 @@
           </div>
       </div>
       <!-- Card -->
-      <div class="row mt-5 pt-6">
+      <div class="row mt-5 pt-6 lastcont">
         <div class="col-md-4">
           <div class="card">
             <div class="card-body pb-5 text-center">
@@ -87,8 +87,8 @@
               </div>
 
 
-              <h5 class="h4 lh-130 mb-3 midle">Besoin Materiel</h5>
-              <p class="text-muted mb-0 midle">lorem</p>
+              <h5 class="h4 lh-130 mb-3 midle">Humain</h5>
+              <p class="text-muted mb-0 midle">Besoins de personnel ou de bénévoles.</p>
             </div>
           </div>
         </div>
@@ -98,8 +98,8 @@
               <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
                 <%= image_tag("donner.png", :alt => "rss feed", :class => "smallimg"  ) %>
               </div>
-              <h5 class="h4 lh-130 mb-3 midle">Get more results</h5>
-              <p class="text-muted mb-0 midle">lorem</p>
+              <h5 class="h4 lh-130 mb-3 midle">Materiels</h5>
+              <p class="text-muted mb-0 midle">Mobiliers, vêtements et autres...</p>
             </div>
           </div>
         </div>
@@ -109,8 +109,8 @@
               <div class="pt-4 pb-5 align-items-center d-flex justify-content-center">
                 <%= image_tag("trolley.png", :alt => "rss feed", :class => "smallimg") %>
               </div>
-              <h5 class="h4 lh-130 mb-3 midle">Increase your audience</h5>
-              <p class="text-muted mb-0 midle">lorem</p>
+              <h5 class="h4 lh-130 mb-3 midle">Finances</h5>
+              <p class="text-muted mb-0 midle">Soutenez des projets, activitées</p>
             </div>
           </div>
         </div>
@@ -118,57 +118,62 @@
     </div>
   </section>
 
-    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section" style="background-color: #FAFBFE !important;">
+    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section">
       <div class="container">
+<!--         <div class="row mb-5 justify-content-center text-center">
+          <div class="col-lg-6">
+            <h2 class=" mt-4">Notre Histoire</h2>
+          </div>
+        </div> -->
         <div class="py-6">
           <div class="row mt-4 row-grid justify-content-between align-items-center">
               <div class="col-lg-8 order-lg-2">
-                  <h5 class="h3 midle">Envie de nous aider?</h5>
-
-                  <p class=" my-4 midle">
-                    Nous avons besoins de personnes motivées par notre projet et ayant envie de donner un peu de leur temps, partager leur expérience avec les jeunes dans des ateliers ou diverses activités.
+                  <h5 class="h3">Envie de nous apporter votre soutient?</h5>
+                  <p class="my-4">
+                    Nous avons besoins de personnes motivées par notre projet et ayant envie de donner un peu de leur temps, partager leur expérience avec les jeunes dans des ateliers où diverses activités.
                   </p>
               </div>
               <div class="col-lg-4 order-lg-1">
-                <div class="card2 mb-0 mr-lg-5 align-items-left">
-                  <div class="hexa gon1" style="background-image: url(https://images.unsplash.com/photo-1604043705156-f448129cd111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80); width: 220px; font-size: 2em;"> </div>
+                <div class="card2 mb-0 mr-lg-5 align-items-center">
+                  <%= image_tag("soutient.png", :alt => "rss feed", :style => "max-width:250px") %>
                 </div>
               </div>
           </div>
         </div>
         <div class="py-6">
-          <div class="row mt-4 row-grid justify-content-between align-items-left">
-              <div class="col-lg-8 order-lg-2">
-                  <h5 class="h3">Envie de nous aider?</h5>
-                  <p class="lead my-4">
-                    Nous avons besoins de personnes motivées par notre projet et ayant envie de donner un peu de leur temps, partager leur expérience avec les jeunes dans des ateliers ou diverses activités.
-                  </p>
+          <div class="row row-grid justify-content-between align-items-center text-right">
+            <div class="col-lg-8 text-right">
+              <h5 class="h3 text-right">Supporter nous dans nos projets:</h5>
+              <p class="my-4">
+                Grâce à vos dons, nous arrivons à réaliser tous nos projets et nos activités.
+              </p>
+            </div>
+            <div class="col-lg-4 order-lg-1">
+              <div class="card2 mb-0 mr-lg-5 align-items-center">
+                <%= image_tag("aide.png", :alt => "rss feed", :style => "max-width:250px") %>
               </div>
-              <div class="col-lg-4 order-lg-1">
-                <div class="card2 mb-0 mr-lg-5 align-items-left">
-                  <div class="hexa gon1" style="background-image: url(https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); width: 220px; font-size: 2em;"> </div>
-                </div>
-              </div>
+            </div>
           </div>
         </div>
         <div class="py-6">
-          <div class="row mt-4 row-grid justify-content-between align-items-left">
+          <div class="row mt-4 row-grid justify-content-between align-items-center">
               <div class="col-lg-8 order-lg-2">
-                  <h5 class="h3">Need a quick admin panel for your website?</h5>
-                  <p class="lead my-4">
-                    Permet de remplacer régulièrement le matériel usagé et de combler certains besoins des jeunes.
-                    Contactez nous pour plus d’information
+                  <h5 class="h3">Nous avons besoin de materiel:</h5>
+                  <p class="my-4">
+                    Permet de remplacer régulièrement le matériel usager et de combler certains besoins des jeunes.
+                    Contactez nous pour plus d’informations
                   </p>
               </div>
               <div class="col-lg-4 order-lg-1">
-                <div class="card2 mb-0 mr-lg-5 align-items-left">
-                  <div class="hexa gon1" style="background-image: url(https://images.unsplash.com/photo-1567113379515-6e85e7168eb1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80); width: 220px; font-size: 2em;"> </div>
+                <div class="card2 mb-0 mr-lg-5 align-items-center">
+                  <%= image_tag("lefoot.png", :alt => "rss feed", :style => "max-width:250px") %>
                 </div>
               </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section" style="background-color: #FFB63D;">
       <div class="container">
           <div class="row mb-5 justify-content-center text-center">
@@ -190,9 +195,7 @@
                     </div>
                     <div>
                       <span class="h6">Materiel de sport</span>
-                      <p class="text-sm text-muted mb-0">
-                        Built to be customized.
-                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -207,9 +210,7 @@
                     </div>
                     <div>
                       <span class="h6">Vetement chaud</span>
-                      <p class="text-sm text-muted mb-0">
-                          Built to be customized.
-                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -224,9 +225,7 @@
                     </div>
                     <div>
                       <span class="h6">Etagere</span>
-                      <p class="text-sm text-muted mb-0">
-                          Built to be customized.
-                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -241,9 +240,7 @@
                     </div>
                     <div>
                       <span class="h6">Matelas</span>
-                      <p class="text-sm text-muted mb-0">
-                        Built to be customized.
-                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -258,9 +255,7 @@
                     </div>
                     <div>
                       <span class="h6">Un/une Volontaire</span>
-                      <p class="text-sm text-muted mb-0">
-                          Built to be customized.
-                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -275,9 +270,7 @@
                     </div>
                     <div>
                       <span class="h6">Gel Douche</span>
-                      <p class="text-sm text-muted mb-0">
-                        Built to be customized.
-                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -295,9 +288,7 @@
                     </div>
                     <div>
                       <span class="h6">Un aniamteur</span>
-                      <p class="text-sm text-muted mb-0">
-                          Built to be customized.
-                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -314,9 +305,7 @@
                     </div>
                     <div>
                       <span class="h6">Draps</span>
-                      <p class="text-sm text-muted mb-0">
-                        Built to be customized.
-                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -333,9 +322,7 @@
                     </div>
                     <div>
                       <span class="h6">Medicament</span>
-                      <p class="text-sm text-muted mb-0">
-                          Built to be customized.
-                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -362,20 +349,19 @@
         <div class="row mt-5">
           <div class="col-lg-12">
             <div class="card">
-              <div class="card-body pb-5">
+              <div class="card-body pb-5 mt-5">
 <!--                     <div class="pt-4 pb-5">
                     <img src="assets/img/svg/illustrations/illustration-5.svg" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
                 </div> -->
                 <blockquote>
+                <h4>Rapport annuel 2019-2020 - Délégué général aux droits de l'enfant - Communauté française Wallonie Bruxelles (cfwb.be)</h4>
+                <h5 class="text-muted pt-5" style="line-height:2em">
+                  « Il est évident que l’environnement politique ne facilite pas toujours nos initiatives, mais ce n’est pas faute d’avoir essayé d’interpeller le législateur à chaque problématique »
+                </h5>
                 <p class="text-muted mb-5 pt-5" style="line-height:2em">
-                  A l’heure d’écrire ces lignes, le monde assiste à une nouvelle crise de l’accueil suite aux évènements en Afghanistan et une sérieuse remise en question de l’intervention des occidentaux dans les pays en difficultés. De notre côté, chez Synergie14, nous osons dire que notre modèle d’accueil, d’aide aux jeunes migrants fonctionne.
-                  Effectivement après 16 ans d’existence, le travail accompli par l’équipe éducative a été énorme et professionnel. Il y a eu des directeurs brillants et attachants avec des grosses personnalités (Ousmane puis Oumar, retournés depuis au Niger pour mettre leur grande qualité au service de leur patrie d’origine, et maintenant notre excellent Thomas, dans l’équipe d’ailleurs depuis le départ) ; il y a eu des assistantes sociales, administratives, des éducateurs/trices, des stagiaires, des administrateurs/trices qui ont travaillés sans relâche avec cœur et intelligence pour accueillir au mieux près de 2.500 jeunes depuis la création de l’asbl. Merci du fonds du cœur à tous ceux-là !
-                  Une raison peut-être de notre succès tient dans le fait qu’une partie de l’équipe éducative a connu personnellement le parcours de l’exil, cela se ressent souvent dans la facilité de contact direct et franc avec les jeunes… souci que d’autres structures d’accueil rencontrent.
-                  Nous pensons et espérons que chaque jeune qui sort de Synergie14 repart avec l’idée de construire positivement la suite de son cheminement en Belgique ou en Europe. Des perspectives existent, nous leur donnons des clefs pour y parvenir mais insistons sur l’autonomie.
-                  Pour réussir ce challenge d’accueil, nous avons besoin de soutien matériel et financier. Merci à ceux (partenaires publiques et donateurs privés) qui nous soutiennent pour leur confiance.
-                  Ne nous lâchez pas, vous ne serez pas déçus… , au bout du compte, c’est rentable
+                  Je tiens d’abord à remercier Bernard De Vos pour toutes les initiatives mises en place en termes de concertation sociale avec les différents acteurs qui travaillent pour les jeunes et notamment pour les MENA. Je retiens de son mandat le désir permanent de centrer son rôle de Délégué général aux droits de l’enfant sur l’institutionnel plutôt que sur un charisme personnel. Ce rôle s’est traduit à plusieurs reprises par la défense des droits des jeunes en invitant toujours les intervenants sociaux à la table de la réflexion afin de trouver des solutions adaptées. Il est évident que l’environnement politique ne facilite pas toujours nos initiatives, mais ce n’est pas faute d’avoir essayé d’interpeller le législateur à chaque problématique. C’est pour cette raison que nous voudrions souligner un des sujets qui nous tient à cœur et qui doit s’inscrire dans la continuité de nos actions : l’accueil et l’insertion sociale des MENA non demandeurs d’asile, impliqués dans des faits qualifiés d’infractions. Ce public représente une niche plus ou moins importante en fonction des pics d’arrivées. Le problème reste toujours entier quel que soit le nombre, en termes de stabilité dans les centres d’accueil et de projet scolaire adapté. La seule institution qui arrive actuellement à les contenir par contrainte – ce qui n’est pas dans nos missions – est l’IPPJ. À ce propos, nous ne pouvons, en tant qu’intervenants sociaux, qu’imaginer des solutions basées sur la motivation. Pour ce faire, nous aurions souhaité, en plus du panel d’activités proposées par les associations, mettre en place un dispositif d’apprentissage scolaire moins élevé que le CEFA (centre d’éducation et de formation en alternance, ndlr), mais qui ne se résume pas forcément à la classe passerelle (DASPA - Dispositif d’Accueil et de Scolarisation des élèves Primo-Arrivants) avec son système d’enseignement classique pour des jeunes ayant décroché depuis longtemps de l’école. Le but est de trouver un consensus entre le ministère chargé de l’enseignement et le ministère en charge de la jeunesse pour reconnaître comme fréquentation scolaire quelque chose de plus simple et d’accessible à ces jeunes en difficulté. Nous pensons déjà à l’expertise de Lire et Ecrire, aux écoles comme la Providence, aux associations qui proposent un apprentissage scolaire adapté en collaboration 127 avec un ensemble de patrons et d’entreprises pour mettre en place ce système. L’objectif est de mettre ces jeunes à la pratique dès les premières semaines de l’accueil au centre, pour motiver en même temps leur sens de l’apprentissage théorique et que celui-ci n’occupe pas toutes leurs journées de la semaine assis sur un banc. Synergie 14 avait déjà commencé à travailler sur cette idée à travers des consultations, mais les mesures de sécurité sanitaire liées à la pandémie de cette année 2020 ont, pour l’instant, tout interrompu. En espérant toujours un soutien sans faille dans la continuité de l’élan pris par M. De Vos sur la problématique des jeunes en difficultés, nous lui souhaitons de meilleurs horizons et qu’il reste toujours le conseiller et l’acteur social qu’il a toujours été.
                 </p>
-                <p>David Cardon de Lichtbuer - Président du CA</p>
+                <p>Thomas Simon Senghor - Directeur de l'asbl Synergie 14</p>
               </div>
             </div>
           </div>

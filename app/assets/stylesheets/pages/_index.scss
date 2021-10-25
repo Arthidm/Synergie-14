@@ -9,6 +9,10 @@
   max-width: 50%;
 }
 
+.imgimpact {
+  animation: fadeLeft .4s linear .4s backwards;
+}
+
 .textgon {
 
 }
@@ -69,6 +73,28 @@
   left: -14em;
   z-index: 10;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:767px){
   .lead {
@@ -220,7 +246,7 @@
   }
 
   .smallimg {
-    width: 30%;
+    max-width: 30%;
   }
 
   .smallpic {
@@ -263,3 +289,4 @@
     text-align: center !important;
   } */
 }
+
