@@ -153,3 +153,22 @@
     height: 196px;
   }
 }
+
+
+.image2 {
+   position: relative;
+
+}
+
+.over {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(255, 182, 61, 0.7);
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 70%;
+}
