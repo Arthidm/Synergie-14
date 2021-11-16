@@ -42,6 +42,12 @@ $bootstrap-xl: 1200px;
   }
 }
 
+.carousel-item:hover {
+/*   background-color: crimson;
+  transition: all .5s;
+  transform : translateY(-10px); */
+}
+
 // --- END: crop images --- //
 
 
@@ -52,6 +58,7 @@ $bootstrap-xl: 1200px;
   transition: 0.3s;
 }
 
+
 #gallery.custom {
   padding: 0 15px;
 
@@ -61,6 +68,9 @@ $bootstrap-xl: 1200px;
     border-radius: 300px 30px 300px 300px;
 
     &:hover {
+      background-color: crimson;
+      transition: all .5s;
+      transform : translateY(-10px);
       border-radius: 30px 90px 30px 30px;
     }
   }

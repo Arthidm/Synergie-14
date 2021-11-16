@@ -172,3 +172,82 @@
   left: 10px;
   width: 70%;
 }
+
+
+
+.card3 {
+    position: relative;
+    padding: 45px 50px 25px 60px;
+    margin-top: 200px;
+    border-radius: 10px;
+    color: #fff
+}
+
+.post-txt {
+    font-size: 20px;
+    margin-bottom: 0
+}
+
+.quote-img {
+    position: absolute;
+    top: 32px;
+    left: 25px;
+    width: 30px;
+    height: 30px
+}
+
+.nice-img {
+    width: 20px;
+    height: 25px;
+    margin-bottom: 7px
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 20px solid #212121;
+    margin-left: 85px
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+.profile-pic {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    left: 65px;
+    margin-top: 15px
+}
+
+.profile-name {
+    position: absolute;
+    font-size: 22px;
+    margin-top: 60px;
+    left: 210px;
+    color: #616161
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

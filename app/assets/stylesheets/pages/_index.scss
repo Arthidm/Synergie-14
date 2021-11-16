@@ -6,6 +6,24 @@
   margin-bottom: 3em;
 }
 
+.move-up:hover{
+  background-color: crimson;
+  transition: all .5s;
+  transform : translateY(-10px);
+}
+
+.scdtext {
+  text-align: left !important;
+}
+
+.carousel-item {
+  transition: transform 250ms;
+}
+
+.carousel-item:hover {
+  transition: transform 250ms;
+}
+
 .textwidth {
   max-width: 50%;
 }

@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="/connaitre">Accueil</a>
+                        <a class="nav-link" href="/">Accueil</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="/connaitre">Nous Connaître</a>
@@ -31,6 +31,21 @@
                     <li class="nav-item ">
                         <a class="nav-link" href="/contact">Nous Contacter</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <%= image_tag("idea.png", :alt => "rss feed", :class => "ml-4 mt-2", :style => "width: 30px") %>
+
+                        <div class="dropdown-content">
+                          <h5 style="color: #F65337">Quoi de neuf chez Synergie14?</h5>
+                          &#8226 Le mercredi 17 Novembre, <strong>Synegie 14 fête ses 16 ans</strong> et inaugure sa nouvelle maison! C'est une nouvelle étape pour l'asbl.
+                          <br>
+                          <br>
+                          &#8226 <strong>Ibra </strong> a signé son premier contrat comme éducateur @Synergie 14 !
+                          <br>
+                          <br>
+                          <%= image_tag("ContratIbra1.png", :alt => "rss feed", :class => "") %>
+                        </div>
+                    </li>
+                  </div>
                 </ul>
 
                 <!-- Mobile button -->
@@ -56,11 +71,11 @@
                   </p>
                   <!-- Buttons -->
                   <div class="mt-5 smlmargin">
-                      <a href="#" class="btn btn-warning btn-lg btn-icon">
+                      <a href="/contact" class="btn btn-warning btn-lg btn-icon">
                           <span class="btn-inner--icon">
                               <i data-feather="edit-3"></i>
                           </span>
-                          <span class="btn-inner--text">Contactez Nous</span>
+                          <span class="btn-inner--text" href="/contact">Contactez Nous</span>
                       </a>
                   </div>
                 </div>
@@ -72,6 +87,24 @@
             </div>
         </div>
     </section>
+
+   <!--  <section class="container-md  ">
+      <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class=" ">
+                    <div class="card3">
+                        <h2>Quoi de Neuf :</h2>
+                        <p class="post" style="color:black"> <span><img class="quote-img" src="https://i.imgur.com/i06xx2I.png"></span>
+                          <li style="color: black; font-size: 24px;">Le mercredi 17 Novembre, Synegie 14 fête ses 16 ans et inaugure sa nouvelle maison! C'est une nouvelle étape pour l'asbl.</li>
+                          <li style="color: black; font-size: 24px;">Ibra a signé son premier contrat comme éducateur @Synergie 14 !</li>
+                        </p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <section class="slice slice-lg">
       <div class="container pt-xl-6 ">
@@ -213,28 +246,28 @@
 
     <div class="slice slice-lg mt-8">
       <div class="container">
-        <h1 class="text-center texthex" style="color: black;">Gallerie Photo</h1>
+        <h1 class="text-center texthex" style="color: black;">Galerie Photo</h1>
 
         <div class="row" id="gallery2" data-toggle="modal" data-target="#exampleModal">
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
             <div class="image2">
-              <%= image_tag("hypothérapie.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"   ) %>
+              <%= image_tag("hypothérapie.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"   ) %>
 
               <h2 class="over">Hippotherapie:</h2>
             </div>
             <div class="image2">
-              <%= image_tag("Bowling2.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"   ) %>
+              <%= image_tag("Bowling2.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"   ) %>
 
               <h2 class="over">Bowling:</h2>
             </div>
           </div>
            <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="image2">
-              <%= image_tag("boxe2.jpg", :alt => "rss feed", :style => "width: 100%; height: 400px", :class => "w-100 shadow-1-strong rounded mb-4 mt-2", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"  ) %>
+              <%= image_tag("boxe2.jpg", :alt => "rss feed", :style => "width: 100%; height: 400px", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"  ) %>
               <h2 class="over">Boxe:</h2>
             </div>
             <div class="image2">
-              <%= image_tag("escalade2.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"  ) %>
+              <%= image_tag("escalade2.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"  ) %>
 
               <h2 class="over">Escalade:</h2>
             </div>
@@ -242,11 +275,11 @@
 
           <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="image2">
-              <%= image_tag("minifoot.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"  ) %>
+              <%= image_tag("minifoot.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"  ) %>
               <h2 class="over">Football:</h2>
             </div>
             <div class="image2">
-              <%= image_tag("money.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"  ) %>
+              <%= image_tag("money.jpg", :alt => "rss feed", :style => "width: 100%", :class => "w-100 shadow-1-strong rounded mb-4 mt-2 move-up", :options => { "data-toggle" => "modal", "data-target" => "#carouselExample"}, "data-slide-to" => "0"  ) %>
               <h2 class="over">Sorties Culturelles:</h2>
             </div>
           </div>
@@ -281,6 +314,19 @@
                 <li data-target="#carouselExample" data-slide-to="7"></li>
                 <li data-target="#carouselExample" data-slide-to="8"></li>
                 <li data-target="#carouselExample" data-slide-to="9"></li>
+                <li data-target="#carouselExample" data-slide-to="10"></li>
+                <li data-target="#carouselExample" data-slide-to="11"></li>
+                <li data-target="#carouselExample" data-slide-to="12"></li>
+                <li data-target="#carouselExample" data-slide-to="13"></li>
+                <li data-target="#carouselExample" data-slide-to="14"></li>
+                <li data-target="#carouselExample" data-slide-to="15"></li>
+                <li data-target="#carouselExample" data-slide-to="16"></li>
+                <li data-target="#carouselExample" data-slide-to="17"></li>
+                <li data-target="#carouselExample" data-slide-to="18"></li>
+                <li data-target="#carouselExample" data-slide-to="19"></li>
+                <li data-target="#carouselExample" data-slide-to="20"></li>
+                <li data-target="#carouselExample" data-slide-to="21"></li>
+                <li data-target="#carouselExample" data-slide-to="22"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -313,6 +359,45 @@
                 <div class="carousel-item">
                   <%= image_tag("hippothérapie10_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
                 </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti1_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti2_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti3_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti4_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti5_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti6_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti7_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti8_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti9_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti11_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti12_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti13_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("acti14_censored.jpg", :alt => "rss feed", :style => "width: 100%", :class => "img_scd"  ) %>
+                </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -342,6 +427,7 @@
               <a class="" href="">Notre Impact</a>
               <a class="" href="/soutenir">Nous Aider</a>
               <a class="" href="/contact">Nous Contacter</a>
+              <a href="#" class="back-to-top d-flex align-items-center justify-content-center">back to top</a>
             </p>
             <!-- <ul class="ftco-footer-social p-0">
               <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
@@ -364,6 +450,268 @@
           document.getElementById('exampleModal').classList.remove("custom");
         }
       }
+
+      (function() {
+        "use strict";
+
+        /**
+         * Easy selector helper function
+         */
+        const select = (el, all = false) => {
+          el = el.trim()
+          if (all) {
+            return [...document.querySelectorAll(el)]
+          } else {
+            return document.querySelector(el)
+          }
+        }
+
+        /**
+         * Easy event listener function
+         */
+        const on = (type, el, listener, all = false) => {
+          let selectEl = select(el, all)
+          if (selectEl) {
+            if (all) {
+              selectEl.forEach(e => e.addEventListener(type, listener))
+            } else {
+              selectEl.addEventListener(type, listener)
+            }
+          }
+        }
+
+        /**
+         * Easy on scroll event listener
+         */
+        const onscroll = (el, listener) => {
+          el.addEventListener('scroll', listener)
+        }
+
+        /**
+         * Navbar links active state on scroll
+         */
+        let navbarlinks = select('#navbar .scrollto', true)
+        const navbarlinksActive = () => {
+          let position = window.scrollY + 200
+          navbarlinks.forEach(navbarlink => {
+            if (!navbarlink.hash) return
+            let section = select(navbarlink.hash)
+            if (!section) return
+            if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+              navbarlink.classList.add('active')
+            } else {
+              navbarlink.classList.remove('active')
+            }
+          })
+        }
+        window.addEventListener('load', navbarlinksActive)
+        onscroll(document, navbarlinksActive)
+
+        /**
+         * Scrolls to an element with header offset
+         */
+        const scrollto = (el) => {
+          let header = select('#header')
+          let offset = header.offsetHeight
+
+          let elementPos = select(el).offsetTop
+          window.scrollTo({
+            top: elementPos - offset,
+            behavior: 'smooth'
+          })
+        }
+
+        /**
+         * Toggle .header-scrolled class to #header when page is scrolled
+         */
+        let selectHeader = select('#header')
+        let selectTopbar = select('#topbar')
+        if (selectHeader) {
+          const headerScrolled = () => {
+            if (window.scrollY > 100) {
+              selectHeader.classList.add('header-scrolled')
+              if (selectTopbar) {
+                selectTopbar.classList.add('topbar-scrolled')
+              }
+            } else {
+              selectHeader.classList.remove('header-scrolled')
+              if (selectTopbar) {
+                selectTopbar.classList.remove('topbar-scrolled')
+              }
+            }
+          }
+          window.addEventListener('load', headerScrolled)
+          onscroll(document, headerScrolled)
+        }
+
+        /**
+         * Back to top button
+         */
+        let backtotop = select('.back-to-top')
+        if (backtotop) {
+          const toggleBacktotop = () => {
+            if (window.scrollY > 100) {
+              backtotop.classList.add('active')
+            } else {
+              backtotop.classList.remove('active')
+            }
+          }
+          window.addEventListener('load', toggleBacktotop)
+          onscroll(document, toggleBacktotop)
+        }
+
+        /**
+         * Mobile nav toggle
+         */
+        on('click', '.mobile-nav-toggle', function(e) {
+          select('#navbar').classList.toggle('navbar-mobile')
+          this.classList.toggle('bi-list')
+          this.classList.toggle('bi-x')
+        })
+
+        /**
+         * Mobile nav dropdowns activate
+         */
+        on('click', '.navbar .dropdown > a', function(e) {
+          if (select('#navbar').classList.contains('navbar-mobile')) {
+            e.preventDefault()
+            this.nextElementSibling.classList.toggle('dropdown-active')
+          }
+        }, true)
+
+        /**
+         * Scrool with ofset on links with a class name .scrollto
+         */
+        on('click', '.scrollto', function(e) {
+          if (select(this.hash)) {
+            e.preventDefault()
+
+            let navbar = select('#navbar')
+            if (navbar.classList.contains('navbar-mobile')) {
+              navbar.classList.remove('navbar-mobile')
+              let navbarToggle = select('.mobile-nav-toggle')
+              navbarToggle.classList.toggle('bi-list')
+              navbarToggle.classList.toggle('bi-x')
+            }
+            scrollto(this.hash)
+          }
+        }, true)
+
+        /**
+         * Scroll with ofset on page load with hash links in the url
+         */
+        window.addEventListener('load', () => {
+          if (window.location.hash) {
+            if (select(window.location.hash)) {
+              scrollto(window.location.hash)
+            }
+          }
+        });
+
+        /**
+         * Preloader
+         */
+        let preloader = select('#preloader');
+        if (preloader) {
+          window.addEventListener('load', () => {
+            preloader.remove()
+          });
+        }
+
+        /**
+         * Hero carousel indicators
+         */
+        let heroCarouselIndicators = select("#hero-carousel-indicators")
+        let heroCarouselItems = select('#heroCarousel .carousel-item', true)
+
+        heroCarouselItems.forEach((item, index) => {
+          (index === 0) ?
+          heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
+            heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
+        });
+
+        /**
+         * Testimonials slider
+         */
+        new Swiper('.testimonials-slider', {
+          speed: 600,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+          },
+          slidesPerView: 'auto',
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            }
+          }
+        });
+
+        /**
+         * Clients Slider
+         */
+        new Swiper('.gallery-slider', {
+          speed: 400,
+          loop: true,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+          },
+          slidesPerView: 'auto',
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            992: {
+              slidesPerView: 5,
+              spaceBetween: 20
+            }
+          }
+        });
+
+        /**
+         * Initiate gallery lightbox
+         */
+        const galleryLightbox = GLightbox({
+          selector: '.gallery-lightbox'
+        });
+
+        /**
+         * Animation on scroll
+         */
+        window.addEventListener('load', () => {
+          AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+          })
+        });
+
+      })()
     </script>
 
 </body>
