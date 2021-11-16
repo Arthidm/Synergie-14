@@ -37,3 +37,9 @@
   top: 8px;
   left: 16px;
 }
+
+.move-up:hover{
+  background-color: crimson;
+  transition: all .5s;
+  transform : translateY(-10px);
+}
