@@ -6,11 +6,11 @@
   margin-bottom: 3em;
 }
 
-.move-up:hover{
+/* .move-up:hover{
   background-color: crimson;
   transition: all .5s;
   transform : translateY(-10px);
-}
+} */
 
 .scdtext {
   text-align: left !important;
@@ -26,6 +26,14 @@
 
 .textwidth {
   max-width: 50%;
+}
+
+.fade-in-right {
+  animation: fadeRight .4s linear .4s;
+}
+
+.fade-in-left {
+  animation: fadeLeft .4s linear .4s backwards;
 }
 
 .imgimpact {
@@ -239,7 +247,7 @@
   }
 
   .bigcont {
-    height: 40vh;
+    height: 45vh;
   }
 
   .mb-8 {
@@ -249,6 +257,18 @@
   .mt-8 {
     margin-top: 1rem !important;
 
+  }
+
+  .no-marg-top {
+    padding-top: 0.5em !important;
+  }
+
+  .no-bot {
+    padding-bottom: 0.5em !important;
+  }
+
+  .no-marg-bot {
+    height: 110px;
   }
 
   .flex {
@@ -262,6 +282,11 @@
   .lastcont {
     display: none;
   }
+
+  .smally {
+    height: 0px;
+  }
+
   .midle {
     text-align: center;
   }

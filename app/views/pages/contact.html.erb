@@ -41,7 +41,7 @@
   <!-- Main content -->
   <section class="slice py-8 bg" style="background-color: #B33951;">
     <div class="row mb-5 justify-content-center text-align-left">
-      <div class="col-lg-6 text-center text-lg-left">
+      <div class="col-lg-6 text-center text-lg-left fade-in-left">
         <!-- Heading -->
         <h1 class="mb-4" style="color: black; font-weight: 900; font-size: 69px;">
           Nous <strong style="color: #FFB63D">Contacter</strong>
@@ -78,6 +78,8 @@
           <p class="lead my-4">
               E: <a href="#">secretariat-synergie14@hotmail.com </a><br>
               T: 02.646.96.70
+              <br>
+              F: 02.375.30.37
           </p>
           <p>
               <!-- Want to share any feedback with us, report a technical issue or just ask us a question? Fill free to contact us and we will get back to you shortly. -->
@@ -185,7 +187,7 @@
             <!-- Title -->
             <div class="row" style="justify-content: center;">
                 <div class="col-lg-6 col-md-10">
-<!--                     <span class="badge badge-primary badge-pill">Support team</span> -->
+<!--             <span class="badge badge-primary badge-pill">Support team</span> -->
                     <h5 class="h5 lh-180 mt-4 mb-6" >Notre Conseil d'Administration:</h5>
                 </div>
             </div>
@@ -245,12 +247,14 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-12 text-center">
-            <h2 class="footer-heading"><a href="#" class="logo">Synergie14.com</a></h2>
+            <h2 class="footer-heading"><a href="#" class="logo">Synergie14.org</a></h2>
             <p class="menu">
               <a class="" href="/connaitre">Nous Connaître</a>
               <a class="" href="">Notre Impact</a>
               <a class="" href="/soutenir">Nous Aider</a>
               <a class="" href="/contact">Nous Contacter</a>
+              <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><%= image_tag("backtop.png", :alt => "rss feed", :style => "color: green", :class => "img_scd mt-5"  ) %></a>
+
             </p>
             <!-- <ul class="ftco-footer-social p-0">
               <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
@@ -261,5 +265,19 @@
         </div>
       </div>
     </footer>
-
 </body>
+
+<script>
+  let backtotop = select('.back-to-top')
+    if (backtotop) {
+      const toggleBacktotop = () => {
+        if (window.scrollY > 100) {
+          backtotop.classList.add('active')
+        } else {
+          backtotop.classList.remove('active')
+        }
+      }
+      window.addEventListener('load', toggleBacktotop)
+      onscroll(document, toggleBacktotop)
+    }
+</script>

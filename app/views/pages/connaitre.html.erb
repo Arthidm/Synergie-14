@@ -43,7 +43,7 @@
     <section class="slice py-8 bg" style="">
       <div class="container py-5">
         <div class="row row-grid align-items-center">
-          <div class="col-lg-6 text-center text-lg-left" style="z-index: 1000">
+          <div class="col-lg-6 text-center text-lg-left fade-in-left" style="z-index: 1000">
             <!-- Heading -->
             <h1 class="mb-4 maintext2" style="color: #F6511D;">
               Nous <strong style="color: black">Connaître</strong>
@@ -88,7 +88,7 @@
                 <!-- <span class="badge badge-soft-success badge-pill badge-lg">
                   Get started
                 </span> -->
-                <h2 class=" mt-6 pb-6">Notre Accueil</h2>
+                <h2 class="mt-6 pb-6 no-bot">Notre Accueil</h2>
                 <div class="mt-2">
                   <p class="lead lh-180"><!-- Use Atomic Design to build components, sections and, then, pages. --></p>
                 </div>
@@ -136,7 +136,7 @@
         <div class="row mt-5">
           <div class="col-lg-12">
 
-            <%= image_tag("places2.png", :class => "img-fluid img-center smallpic", :style => "max-width:540px") %>
+            <%= image_tag("newhexa.png", :class => "img-fluid img-center smallpic", :style => "max-width:540px") %>
 <!--                   <img src="places.png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" /> -->
           </div>
         </div>
@@ -206,7 +206,7 @@
             <h2 class=" mt-4">Notre Histoire</h2>
           </div>
         </div>
-        <div class="py-6">
+        <div class="md-py-6">
           <div class="row mt-4 row-grid justify-content-between align-items-center">
               <div class="col-lg-8 order-lg-2">
                   <h5 class="h3"><!-- Need a quick admin panel for your website? --></h5>
@@ -278,7 +278,7 @@
                 <!-- <span class="badge badge-soft-success badge-pill badge-lg">
                   Get started
                 </span> -->
-                <h2 class=" mt-6 mb-6">Un Travail Sans Relache</h2>
+                <h2 class=" mt-6 mb-6">Un Travail Sans Relâche</h2>
             </div>
         </div>
         <!-- Card -->
@@ -318,12 +318,13 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 text-center">
-        <h2 class="footer-heading"><a href="#" class="logo">Synergie14.com</a></h2>
+        <h2 class="footer-heading"><a href="#" class="logo">Synergie14.org</a></h2>
         <p class="menu">
           <a class="" href="/connaitre">Nous Connaître</a>
           <a class="" href="">Notre Impact</a>
           <a class="" href="/soutenir">Nous Aider</a>
           <a class="" href="/contact">Nous Contacter</a>
+          <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><%= image_tag("backtop.png", :alt => "rss feed", :style => "color: green", :class => "img_scd mt-5"  ) %></a>
         </p>
         <!-- <ul class="ftco-footer-social p-0">
           <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
@@ -334,3 +335,18 @@
     </div>
   </div>
 </footer>
+
+<script>
+  let backtotop = select('.back-to-top')
+    if (backtotop) {
+      const toggleBacktotop = () => {
+        if (window.scrollY > 100) {
+          backtotop.classList.add('active')
+        } else {
+          backtotop.classList.remove('active')
+        }
+      }
+      window.addEventListener('load', toggleBacktotop)
+      onscroll(document, toggleBacktotop)
+    }
+</script>
