@@ -39,7 +39,24 @@
 }
 
 .move-up:hover{
-  background-color: crimson;
+  background-color: #FFB63D;
   transition: all .5s;
   transform : translateY(-10px);
+}
+
+.move-up-orange:hover{
+  background-color: #F6511D;
+  transition: all .5s;
+  transform : translateY(-10px);
+}
+
+.move-up-red:hover{
+  background-color: #B43951;
+  transition: all .5s;
+  transform : translateY(-10px);
+}
+
+
+.lineheight {
+  line-height: 2;
 }
